@@ -1,0 +1,73 @@
+.strategy {
+	--strategy-desc-color: rgb(106, 106, 106);
+	counter-reset: strategy;
+}
+
+/* .strategy-body {
+	height: 100%;
+} */
+
+.counter-nest::before {
+	counter-increment: strategy;
+	content: counter(strategy);
+}
+
+.strategy-card {
+	background-color: white;
+	/* width: ; */
+	-webkit-box-shadow: 2px 4px 15px 0px rgba(246, 246, 246, 1);
+	-moz-box-shadow: 2px 4px 15px 0px rgba(246, 246, 246, 1);
+	box-shadow: 2px 4px 15px 0px rgba(246, 246, 246, 1);
+}
+
+.col:nth-child(4n+1)>.strategy-card {
+	--strategy-card-color: #0F7AD3;
+	--strategy-card-bg: #E5F4FD;
+}
+
+.col:nth-child(4n+2)>.strategy-card {
+	--strategy-card-color: #F79D56;
+	--strategy-card-bg: #FFF4EC;
+}
+
+.col:nth-child(4n+3)>.strategy-card {
+	--strategy-card-color: #43CEA2;
+	--strategy-card-bg: #EDFDFF;
+}
+
+.col:nth-child(4n+4)>.strategy-card {
+	--strategy-card-color: #9C9493;
+	--strategy-card-bg: #EEEEEE;
+}
+
+.strategy-card-number {
+	color: var(--strategy-card-color);
+	background-color: var(--strategy-card-bg);
+	width: 3.75rem;
+	height: 3.75rem;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	font-size: 1.563rem;
+}
+
+.strategy-card-name {
+	border-bottom-color: var(--strategy-card-color);
+	border-bottom-style: solid;
+	border-bottom-width: 3px;
+	display: inline-flex;
+	/* padding-bottom: ; */
+	font-size: 1.25rem;
+}
+
+.strategy-card-number, .strategy-card-name {
+	font-weight: 600;
+}
+
+.strategy-card-desc {
+	color: var(--strategy-desc-color);
+	/* text-align: justify; */
+	font-size: 1rem;
+	font-weight: 500;
+}
