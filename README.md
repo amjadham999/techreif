@@ -2,6 +2,4 @@
 Front-End project without any framework
 
 # languages
-HTML - HTML5
-CSS - CSS3, Bootstrap
-JS - Vanilla JS
+HTML5, CSS3, Bootstrap, Vanilla JS
